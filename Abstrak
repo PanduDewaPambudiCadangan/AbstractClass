@@ -1,0 +1,62 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package abstrak;
+
+import java.util.Scanner;
+/**
+ *
+ * @author pdewa
+ */
+public class Abstrak {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        String pilih1;
+        int pilih;
+        int harga = 0;
+        Scanner input = new Scanner(System.in);
+        //pemanggilan object
+        pesan obj = new pesan();
+        System.out.println("SELAMAT DATANG DI CAFE RAKHA FAMILI");
+
+        obj.merk();
+
+        System.out.println("Silahkan pilih");
+        pilih = input.nextInt();
+        switch (pilih) {
+            case 1:
+                obj.soda();
+                break;
+
+            case 2:
+                obj.airmineral();
+                break;
+        }
+        Scanner input1 = new Scanner(System.in);
+        System.out.println("Silahkan pilih minuman");
+        pilih1 = input1.nextLine();
+        if (pilih1.equals("coca cola")) {
+            harga = 8000;
+        
+            } else if (pilih1.equals("pepsi")) {
+            harga = 5000;
+
+        } else if (pilih1.equals("aqua")) {
+            harga = 2000;
+
+        } else if (pilih1.equals("cleo")) {
+            harga = 3000;
+        }
+        System.out.println("===============================");
+        System.out.println("Anda memilih minuman " + pilih1);
+        System.out.println("Harga yang harus anda bayar adalah " + harga);
+        System.out.println("Silahkan tunggu sebentar");    
+    }
+    
+}

@@ -1,0 +1,37 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package abstrak;
+
+/**
+ *
+ * @author pdewa
+ */
+public class pesan extends pemesanan {
+    
+    @Override
+    public void merk() { //value untuk merk minuman
+        System.out.println(" ");
+        System.out.println("Jenis minuman yang tersedia : ");
+        System.out.println("1.Soda, 2.Air mineral");
+
+        System.out.println("====================================");
+    }
+
+    @Override
+    public void soda() { //value untuk merk minuman
+        System.out.println(" ");
+        System.out.println("minuman soda yang tersedia : ");
+        System.out.println("Coca Cola, pepsi");
+
+    }
+
+    @Override
+    public void airmineral() { //value untuk merk minuman
+        System.out.println(" ");
+        System.out.println("minuman mineral yang tersedia : ");
+        System.out.println("Aqua, Cleo");
+    }
+}
